@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Python &mdash; Treinamento</title>
+
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2014.06',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Treinamento Python" href="#" />
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">Treinamento Python</a> &raquo;</li>
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+
+  <div class="section" id="python">
+<h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<p>Desenvolvimento (Rafael Lima)
+<a class="reference external" href="mailto:rafael&#46;lima&#37;&#52;&#48;kmee&#46;com&#46;br">rafael<span>&#46;</span>lima<span>&#64;</span>kmee<span>&#46;</span>com<span>&#46;</span>br</a></p>
+<div class="section" id="sumario">
+<h2>Sumário<a class="headerlink" href="#sumario" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Why Python?</li>
+<li>Pontos relevantes</li>
+<li>Origem</li>
+<li>Utilizadores</li>
+<li>A Linguagem</li>
+<li>Condições</li>
+<li>Repetições</li>
+<li>Strings</li>
+</ul>
+</div>
+<div class="section" id="why-python">
+<h2>Why Python?<a class="headerlink" href="#why-python" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="_static/zenpython.png" class="center" src="_static/zenpython.png" />
+</div>
+</div>
+<div class="section" id="pontos-relevantes">
+<h2>Pontos relevantes<a class="headerlink" href="#pontos-relevantes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Permite focar no problema, sem perder tempo na sintaxe</li>
+<li>Interativa</li>
+<li>Alta produtividade</li>
+<li>Baterias inclusas</li>
+<li>Comunidade livre, forte, diversificada</li>
+<li>Linguagem de verdade: orientada a objetos, funcional, estruturada</li>
+<li>Linguagem de uso geral vs nichos</li>
+<li>Simples de iniciar, sem esgotar</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>100 linhas em C 15 linhas python</li>
+<li>todas bibliotecas para acesso de banco, criar janelas etc</li>
+<li>computação científica, sites, computação gráfica</li>
+<li>boa para iniciantes</li>
+</ul>
+</div>
+</div>
+<div class="section" id="origem">
+<h2>Origem<a class="headerlink" href="#origem" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="_static/montypyhton.jpg" class="center" src="_static/montypyhton.jpg" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No Natal de 1989, um holandês chamado Guido van Rossum
+Linguagem ABC influenciou e a situação das linguagens atuais
+Origem  Monty Python, programa Monty Python&#8217;s Flying Circus
+Cobra piton</p>
+</div>
+</div>
+<div class="section" id="utilizadores">
+<h2>Utilizadores<a class="headerlink" href="#utilizadores" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="_static/usam.png" class="center" src="_static/usam.png" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Youtube: 1h video/s 4 bilhões de visualizações</p>
+</div>
+</div>
+<div class="section" id="jogos">
+<h2>Jogos<a class="headerlink" href="#jogos" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="_static/civ.jpg" class="center" src="_static/civ.jpg" />
+</div>
+</div>
+<div class="section" id="edicao-de-videos">
+<h2>Edição de Vídeos<a class="headerlink" href="#edicao-de-videos" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="_static/blender.jpg" class="center" src="_static/blender.jpg" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Scripts em Python
+Pixar , Hobbit (Weta Digital)</p>
+</div>
+</div>
+<div class="section" id="raspberry-pi">
+<h2>Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="_static/rasppi.jpg" class="center" src="_static/rasppi.jpg" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">O &#8220;Pi&#8221; do nome se origina de Python</p>
+</div>
+</div>
+<div class="section" id="demais">
+<h2>Demais<a class="headerlink" href="#demais" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="_static/demaisusam.png" class="center" src="_static/demaisusam.png" />
+</div>
+</div>
+<div class="section" id="popularidade-github-e-stackoverflow">
+<h2>Popularidade Github e StackOverflow<a class="headerlink" href="#popularidade-github-e-stackoverflow" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="_static/pop.png" class="center" src="_static/pop.png" />
+</div>
+</div>
+</div>
+<div class="section" id="a-linguagem">
+<h1>A Linguagem<a class="headerlink" href="#a-linguagem" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="do-inicio">
+<h2>Do início<a class="headerlink" href="#do-inicio" title="Permalink to this headline">¶</a></h2>
+<p>Python é uma linguagem de programação de alto nível,
+interpretada, imperativa, orientada à objetos, funcional,
+de tipagem dinâmica e forte.
+Como Python é uma linguagem interpretada
+você pode acessar o interpretador Python</p>
+<p>No console python</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span> <span class="s">&quot;Hello World &quot;</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span> <span class="o">*</span> <span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="condicoes">
+<h2>Condições<a class="headerlink" href="#condicoes" title="Permalink to this headline">¶</a></h2>
+<p><strong>IF</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Primeiro valor: &quot;</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Segundo valor: &quot;</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">&quot;O primeiro número é o maior!&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">&quot;O segundo número é o maior!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="multa-py">
+<h2>Multa.py<a class="headerlink" href="#multa-py" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Pergunte a velocidade de um carro, supondo um valor
+inteiro. Caso ultrapasse 110 km/h,
+exiba uma mensagem dizendo que o usuário
+foi multado. Neste caso, exiba o valor
+da multa, cobrando R$ 5,00 por km acima de 100.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">v = int(input(&#8220;Velocidade: &#8221;))
+if v &gt; 110:
+....print (&#8220;Você foi multado!&#8221;)
+....multa = (v-110)*5 /
+....print (&#8220;Valor da multa: R$ %5.2f&#8221; %multa)</p>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Condições<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><strong>ELSE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">idade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite a idade de seu carro: &quot;</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">idade</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Seu carro é novo&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">idade</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Seu carro é velho&quot;</span><span class="p">)</span>
+
+<span class="n">idade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite a idade de seu carro: &quot;</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">idade</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Seu carro é novo&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Seu carro é velho&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tchau-py">
+<h2>Tchau.py<a class="headerlink" href="#tchau-py" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Considere a empresa de telefonia Tchau.
+Abaixo de 200 minutos, a empresa cobra R$0,20 por minuto.
+Entre 20 e 400 minutos, o preço é R$0,18. Acima de 400 minutos
+o preço por minuto é R$0,15. Calcule sua conta de telefone.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">minutos = int(input(&#8220;Minutos utilizados: &#8221;))
+if minutos &lt; 200:
+....preço = 0.20
+else:
+....if minutos &lt;= 400:
+........preco = 0.18
+....else:
+........preco = 0.15
+print(&#8220;Conta telefônica: R$%6.2f&#8221; % (minutos * preco))</p>
+</div>
+<p>Após a conclusão do script, agora é necessário adicionar
+mais uma promoção da empresa Tchau, onde a tarifa é de R$ 0.08
+quando você utiliza mais que 800 minutos</p>
+<p>Utilizando uma das possíveis soluções do Tchau.py com o acréscimo
+da nova promoção:</p>
+<div class="highlight-python"><div class="highlight"><pre> minutos = int(input(&quot;Minutos utilizados: &quot;))
+ if minutos &lt; 200:
+     preço = 0.20
+ else:
+     if minutos &lt;= 400:
+         preco = 0.18
+     else:
+<span class="hll">         if minutos &lt;= 800:
+</span>             preco = 0.15
+<span class="hll">         else:
+</span>             preco = 0.08
+ print(&quot;Conta telefônica: R$%6.2f&quot; % (minutos * preco))
+</pre></div>
+</div>
+</div>
+<div class="section" id="elif">
+<h2>ELIF<a class="headerlink" href="#elif" title="Permalink to this headline">¶</a></h2>
+<p>A cláusula elif substitui um par else if</p>
+<div class="highlight-python"><div class="highlight"><pre> minutos = int(input(&quot;Minutos utilizados: &quot;))
+ if minutos &lt; 200:
+     preço = 0.20
+<span class="hll"> elif minutos &lt;= 400:
+</span>     preco = 0.18
+<span class="hll"> elif minutos &lt;= 800:
+</span>     preco = 0.15
+ else:
+     preco = 0.08
+
+ print(&quot;Conta telefônica: R$%6.2f&quot; % (minutos * preco))
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="repeticoes">
+<h1>Repetições<a class="headerlink" href="#repeticoes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Repetições<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-right">
+<a class="reference internal image-reference" href="_static/loop.jpg"><img alt="_static/loop.jpg" src="_static/loop.jpg" /></a>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">x</span>
+    <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">print</span> <span class="n">x</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span> <span class="k">print</span> <span class="n">x</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="listas">
+<h1>Listas<a class="headerlink" href="#listas" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id3">
+<h2>Listas<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">edificios</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Família Souza&quot;</span><span class="p">,</span>
+            <span class="s">&quot;Família Brito&quot;</span><span class="p">,</span>
+            <span class="s">&quot;Sr Jorge&quot;</span><span class="p">,</span>
+            <span class="s">&quot;Família Tanaka&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">edificio</span> <span class="ow">in</span> <span class="n">edificios</span><span class="p">:</span> <span class="k">print</span> <span class="n">edificio</span>
+</pre></div>
+</div>
+<p>Métodos de lista:</p>
+<p>Verifique utilizando o método dir(objeto)</p>
+<ul class="simple">
+<li>append , extend</li>
+<li>insert , remove</li>
+<li>count, index</li>
+<li>pop, reverse , sort</li>
+</ul>
+<p><a class="reference external" href="https://docs.python.org/2/tutorial/datastructures.html">https://docs.python.org/2/tutorial/datastructures.html</a></p>
+<p>Insere 5 números e depois exibe-os:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">vetor</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite um número: &quot;</span><span class="p">))</span>
+    <span class="n">vetor</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="s">&quot;Vetor lido...&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">vetor</span><span class="p">:</span> <span class="k">print</span> <span class="n">numero</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="consoantes-py">
+<h2>Consoantes.py<a class="headerlink" href="#consoantes-py" title="Permalink to this headline">¶</a></h2>
+<p>Faça um Programa que leia um vetor de 10 caracteres minúsculos,
+e diga quantas consoantes foram lidas.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Basta verificar se letras[i] not in &#8216;aeiou&#8217;</p>
+</div>
+</div>
+</div>
+<div class="section" id="strings">
+<h1>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id4">
+<h2>Strings<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Pode ser utilizado aspas simples, duplas ou triplas:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="s">&#39;abacate&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>
+<span class="go">&#39;abacate&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Rei Burgão&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span>
+<span class="go">&quot;Rei Burgão&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span> <span class="o">=</span> <span class="s">&#39;&#39;&#39;</span>
+<span class="go">        &lt;html&gt;</span>
+<span class="go">            &lt;head&gt;</span>
+<span class="go">                &lt;title&gt; Teste &lt;/title&gt;</span>
+<span class="go">            &lt;/head&gt;</span>
+<span class="go">            &lt;body&gt;</span>
+<span class="go">                &lt;p&gt;Testando&lt;/p&gt;</span>
+<span class="go">            &lt;/body&gt;</span>
+<span class="go">        &lt;/html&gt;</span>
+<span class="go">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fatiamento">
+<h2>Fatiamento<a class="headerlink" href="#fatiamento" title="Permalink to this headline">¶</a></h2>
+<p>Fatia do primeiro índice até o anterior do segundo:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;0123456789&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="go">01</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="go">23</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">012345678</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">8</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="incremento-no-fatiamento">
+<h2>Incremento no fatiamento<a class="headerlink" href="#incremento-no-fatiamento" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">texto</span> <span class="o">=</span> <span class="s">&quot;batatinha quando nasce&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">texto</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>
+<span class="go">&#39;bttnaqad ac&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">texto</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">&#39;ecsan odnauq ahnitatab&#39;</span>
+</pre></div>
+</div>
+<p>Verifique se uma palavra é palíndrome:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">palavra</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Palavra: &#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">palavra</span> <span class="o">==</span> <span class="n">palavra</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%s</span><span class="s"> é palíndrome&#39;</span> <span class="o">%</span><span class="n">palavra</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;</span><span class="si">%s</span><span class="s"> não é palíndrome&#39;</span> <span class="o">%</span><span class="n">palavra</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="concatencao">
+<h2>Concatenção<a class="headerlink" href="#concatencao" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Faça um programa que leia uma palavra e troque as vogais por &#8220;*&#8221;</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">palavra</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Palavra: &#39;</span><span class="p">)</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">troca</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+<span class="k">while</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">palavra</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">palavra</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="ow">in</span> <span class="s">&quot;aeiou&quot;</span><span class="p">:</span>
+        <span class="n">troca</span> <span class="o">=</span> <span class="n">troca</span> <span class="o">+</span> <span class="s">&quot;*&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">troca</span> <span class="o">=</span> <span class="n">troca</span> <span class="o">+</span> <span class="n">palavra</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="s">&quot;Nova palavra </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span><span class="n">troca</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Extend existing models</li>
+<li>Many view types</li>
+<li>Workflows</li>
+<li>Reports</li>
+<li>Security</li>
+<li>Translations</li>
+</ul>
+</div>
+<div class="section" id="pesquisar-e-substituir">
+<h2>Pesquisar e Substituir<a class="headerlink" href="#pesquisar-e-substituir" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s">&#39;um tigre, dois tigres, três tigres&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;tigre&#39;</span><span class="p">)</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;tigre&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="go">15</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;tigre&#39;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="go">28</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;tigre&#39;</span><span class="p">,</span> <span class="s">&#39;gato&#39;</span><span class="p">)</span>
+<span class="go">&#39;um gato, dois gatos, três gatos&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">&#39;um tigre, dois tigres, três tigres&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;tigre&#39;</span><span class="p">,</span> <span class="s">&#39;gato&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">&#39;um gato, dois gatos, três gatos&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dividir-e-unir">
+<h2>Dividir e unir<a class="headerlink" href="#dividir-e-unir" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">txt</span> <span class="o">=</span> <span class="s">&#39;batatinha quando nasce&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">txt</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="p">)</span>
+<span class="go">[&#39;21&#39;, &#39;02&#39;, &#39;2011&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span> <span class="o">=</span> <span class="s">&#39;192.188.10.144&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;.&#39;</span><span class="p">)</span>
+<span class="go">[&#39;198&#39;, &#39;188&#39;, &#39;10&#39;, &#39;144&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">times</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;São Paulo&#39;</span><span class="p">,</span> <span class="s">&#39;Santos&#39;</span><span class="p">,</span> <span class="s">&#39;Palmeiras&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;/&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">times</span><span class="p">)</span>
+<span class="go">&#39;São Paulo/Santos/Palmeiras&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="nasceu-py">
+<h2>Nasceu.py<a class="headerlink" href="#nasceu-py" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Faça um programa que solicite a data de nascimento (dd/mm/aaaa) e
+imprima com o nome do mês por extenso</p>
+</li>
+<li><p class="first">Modules have a simple structure</p>
+</li>
+<li><dl class="first docutils">
+<dt>Model definition intuitive and efficient</dt>
+<dd><ul class="first last simple">
+<li>uses Python standards (decorators, descriptors)</li>
+<li>recordsets provide support for &#8220;batch&#8221; processing</li>
+<li>many model hooks (default values, constraints, computed fields)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Python</a><ul>
+<li><a class="reference internal" href="#sumario">Sumário</a></li>
+<li><a class="reference internal" href="#why-python">Why Python?</a></li>
+<li><a class="reference internal" href="#pontos-relevantes">Pontos relevantes</a></li>
+<li><a class="reference internal" href="#origem">Origem</a></li>
+<li><a class="reference internal" href="#utilizadores">Utilizadores</a></li>
+<li><a class="reference internal" href="#jogos">Jogos</a></li>
+<li><a class="reference internal" href="#edicao-de-videos">Edição de Vídeos</a></li>
+<li><a class="reference internal" href="#raspberry-pi">Raspberry Pi</a></li>
+<li><a class="reference internal" href="#demais">Demais</a></li>
+<li><a class="reference internal" href="#popularidade-github-e-stackoverflow">Popularidade Github e StackOverflow</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-linguagem">A Linguagem</a><ul>
+<li><a class="reference internal" href="#do-inicio">Do início</a></li>
+<li><a class="reference internal" href="#condicoes">Condições</a></li>
+<li><a class="reference internal" href="#multa-py">Multa.py</a></li>
+<li><a class="reference internal" href="#id1">Condições</a></li>
+<li><a class="reference internal" href="#tchau-py">Tchau.py</a></li>
+<li><a class="reference internal" href="#elif">ELIF</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#repeticoes">Repetições</a><ul>
+<li><a class="reference internal" href="#id2">Repetições</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#listas">Listas</a><ul>
+<li><a class="reference internal" href="#id3">Listas</a></li>
+<li><a class="reference internal" href="#consoantes-py">Consoantes.py</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#strings">Strings</a><ul>
+<li><a class="reference internal" href="#id4">Strings</a></li>
+<li><a class="reference internal" href="#fatiamento">Fatiamento</a></li>
+<li><a class="reference internal" href="#incremento-no-fatiamento">Incremento no fatiamento</a></li>
+<li><a class="reference internal" href="#concatencao">Concatenção</a></li>
+<li><a class="reference internal" href="#pesquisar-e-substituir">Pesquisar e Substituir</a></li>
+<li><a class="reference internal" href="#dividir-e-unir">Dividir e unir</a></li>
+<li><a class="reference internal" href="#nasceu-py">Nasceu.py</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">Odoo Template 2014.06 documentation</a> &raquo;</li>
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, John Doe.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

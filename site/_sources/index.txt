@@ -1,0 +1,470 @@
+Python
+==================
+Development (Rafael Lima)
+rafael.lima@kmee.com.br
+
+
+Sumário
+----------------
+* Why Python?
+* Pontos relevantes
+* Origem
+* Utilizadores
+* A Linguagem
+* Condições
+* Repetições
+* Strings
+
+
+Why Python?
+-------------------------
+
+.. figure:: /_static/zenpython.png
+   :class: center
+
+
+
+Pontos relevantes
+-----------------------
++ Permite focar no problema, sem perder tempo na sintaxe
++ Interativa
++ Alta produtividade
++ Baterias inclusas
++ Comunidade livre, forte, diversificada
++ Linguagem de verdade: orientada a objetos, funcional, estruturada
++ Linguagem de uso geral vs nichos
++ Simples de iniciar, sem esgotar
+
+.. note::
+    + 100 linhas em C 15 linhas python
+    + todas bibliotecas para acesso de banco, criar janelas etc
+    + computação científica, sites, computação gráfica
+    + boa para iniciantes
+
+
+Origem
+----------------------
+
+.. figure:: /_static/montypyhton.jpg
+   :class: center
+
+.. note::
+   No Natal de 1989, um holandês chamado Guido van Rossum
+   Linguagem ABC influenciou e a situação das linguagens atuais
+   Origem  Monty Python, programa Monty Python's Flying Circus
+   Cobra piton
+
+Utilizadores
+-----------------------------
+
+.. figure:: /_static/usam.png
+   :class: center
+
+.. note::
+   Youtube: 1h video/s 4 bilhões de visualizações
+
+
+
+Jogos
+-----------------------------
+
+.. figure:: /_static/civ.jpg
+   :class: center
+
+
+Edição de Vídeos
+-----------------------------
+
+.. figure:: /_static/blender.jpg
+   :class: center
+
+.. note::
+   Scripts em Python
+   Pixar , Hobbit (Weta Digital)
+
+Raspberry Pi
+-----------------------------
+
+.. figure:: /_static/rasppi.jpg
+   :class: center
+
+.. note::
+   O "Pi" do nome se origina de Python
+
+
+
+Demais
+-----------------------------
+
+.. figure:: /_static/demaisusam.png
+   :class: center
+
+
+Popularidade Github e StackOverflow
+-----------------------------
+
+.. figure:: /_static/pop.png
+   :class: center
+
+A Linguagem
+============================
+
+Do início
+----------
+
+Python é uma linguagem de programação de alto nível,
+interpretada, imperativa, orientada à objetos, funcional,
+de tipagem dinâmica e forte.
+Como Python é uma linguagem interpretada
+você pode acessar o interpretador Python
+
+No console python
+
+.. code-block:: python
+
+   print "Hello World " + "!" * 6
+
+
+
+Condições
+---------------------
+
+**IF**
+
+.. code-block:: python
+
+   a = int(input("Primeiro valor: "))
+   b = int(input("Segundo valor: "))
+
+   if a > b:
+       print ("O primeiro número é o maior!")
+   if b > a:
+       print ("O segundo número é o maior!")
+
+
+Multa.py
+-----------------------
+
+* Pergunte a velocidade de um carro, supondo um valor
+  inteiro. Caso ultrapasse 110 km/h,
+  exiba uma mensagem dizendo que o usuário
+  foi multado. Neste caso, exiba o valor
+  da multa, cobrando R$ 5,00 por km acima de 100.
+
+.. note::
+
+   v = int(input("Velocidade: "))
+   if v > 110:
+   ....print ("Você foi multado!")
+   ....multa = (v-110)*5 /
+   ....print ("Valor da multa: R$ %5.2f" %multa)
+
+
+Condições
+----------------
+
+**ELSE**
+
+.. code-block:: python
+
+   idade = int(input("Digite a idade de seu carro: "))
+
+   if idade <= 3:
+       print("Seu carro é novo")
+   if idade > 3:
+       print("Seu carro é velho")
+
+   idade = int(input("Digite a idade de seu carro: "))
+
+   if idade <= 3:
+       print("Seu carro é novo")
+   else:
+       print("Seu carro é velho")
+
+
+
+Tchau.py
+--------------------
+
+* Considere a empresa de telefonia Tchau.
+  Abaixo de 200 minutos, a empresa cobra R$0,20 por minuto.
+  Entre 20 e 400 minutos, o preço é R$0,18. Acima de 400 minutos
+  o preço por minuto é R$0,15. Calcule sua conta de telefone.
+
+.. note::
+   minutos = int(input("Minutos utilizados: "))
+   if minutos < 200:
+   ....preço = 0.20
+   else:
+   ....if minutos <= 400:
+   ........preco = 0.18
+   ....else:
+   ........preco = 0.15
+   print("Conta telefônica: R$%6.2f" % (minutos * preco))
+
+.. nextslide::
+
+Após a conclusão do script, agora é necessário adicionar
+mais uma promoção da empresa Tchau, onde a tarifa é de R$ 0.08
+quando você utiliza mais que 800 minutos
+
+
+.. nextslide::
+
+Utilizando uma das possíveis soluções do Tchau.py com o acréscimo
+da nova promoção:
+
+.. code-block:: python
+   :emphasize-lines: 8,10
+
+    minutos = int(input("Minutos utilizados: "))
+    if minutos < 200:
+        preço = 0.20
+    else:
+        if minutos <= 400:
+            preco = 0.18
+        else:
+            if minutos <= 800:
+                preco = 0.15
+            else:
+                preco = 0.08
+    print("Conta telefônica: R$%6.2f" % (minutos * preco))
+
+
+ELIF
+-----------------
+
+A cláusula elif substitui um par else if
+
+.. code-block:: python
+   :emphasize-lines: 4,6
+
+    minutos = int(input("Minutos utilizados: "))
+    if minutos < 200:
+        preço = 0.20
+    elif minutos <= 400:
+        preco = 0.18
+    elif minutos <= 800:
+        preco = 0.15
+    else:
+        preco = 0.08
+
+    print("Conta telefônica: R$%6.2f" % (minutos * preco))
+
+
+Repetições
+=====================
+
+Repetições
+---------------------
+
+.. figure:: /_static/loop.jpg
+   :align: right
+   :scale: 50 %
+
+
+::
+
+    x = 1
+    while x <= 3:
+        print x
+        x += 1
+
+    for x in range(1,3+1):
+        print x
+
+    for x in range(1,4): print x
+
+
+Listas
+======================
+
+Listas
+----------------------
+
+::
+
+   edificios = ["Família Souza",
+               "Família Brito",
+               "Sr Jorge",
+               "Família Tanaka"]
+   for edificio in edificios: print edificio
+
+.. nextslide::
+
+Métodos de lista:
+
+
+Verifique utilizando o método dir(objeto)
+
+* append , extend
+* insert , remove
+* count, index
+* pop, reverse , sort
+
+https://docs.python.org/2/tutorial/datastructures.html
+
+.. nextslide::
+
+Insere 5 números e depois exibe-os::
+
+   vetor = []
+   for i in range(1,6):
+       n = int(input("Digite um número: "))
+       vetor.append(n)
+   print ("Vetor lido...")
+   for numero in vetor: print numero
+
+
+
+Consoantes.py
+----------
+
+Faça um Programa que leia um vetor de 10 caracteres minúsculos,
+e diga quantas consoantes foram lidas.
+
+.. note::
+
+   Basta verificar se letras[i] not in 'aeiou'
+
+Strings
+===============================
+
+Strings
+--------------------------------
+
+Pode ser utilizado aspas simples, duplas ou triplas::
+
+    >>> x = 'abacate'
+    >>> x
+    'abacate'
+    >>> y = "Rei Burgão"
+    >>> y
+    "Rei Burgão"
+    >>> form = '''
+            <html>
+                <head>
+                    <title> Teste </title>
+                </head>
+                <body>
+                    <p>Testando</p>
+                </body>
+            </html>
+    '''
+
+
+Fatiamento
+--------------
+
+Fatia do primeiro índice até o anterior do segundo::
+
+    >>> x = "0123456789"
+    >>> print x[0:2]
+    01
+    >>> print x[2:4]
+    23
+    >>> print x[:-1]
+    012345678
+    >>> print x[:-1]
+    8
+
+Incremento no fatiamento
+--------------------
+
+::
+
+    >>> texto = "batatinha quando nasce"
+    >>> texto[::2]
+    'bttnaqad ac'
+    >>> texto[::-1]
+    'ecsan odnauq ahnitatab'
+
+
+
+.. nextslide::
+
+Verifique se uma palavra é palíndrome::
+
+    palavra = input('Palavra: ')
+    if palavra == palavra[::-1]:
+        print('%s é palíndrome' %palavra)
+    else:
+        print('%s não é palíndrome' %palavra)
+
+
+
+Concatenção
+----------
+
+* Faça um programa que leia uma palavra e troque as vogais por "*"
+
+.. nextslide::
+
+::
+
+    palavra = input('Palavra: ')
+    k = 0
+    troca = ""
+    while k < len(palavra):
+        if palavra[k] in "aeiou":
+            troca = troca + "*"
+        else:
+            troca = troca + palavra[k]
+        k += 1
+    print "Nova palavra %s" %troca
+
+* Extend existing models
+* Many view types
+* Workflows
+* Reports
+* Security
+* Translations
+
+
+Pesquisar e Substituir
+-----------------------
+
+::
+
+    >>> s = 'um tigre, dois tigres, três tigres'
+    >>> s.find('tigre')
+    3
+    >>> s.find('tigre', 4)
+    15
+    >>> s.find('tigre', 16)
+    28
+    >>> s.replace('tigre', 'gato')
+    'um gato, dois gatos, três gatos'
+    >>> s
+    'um tigre, dois tigres, três tigres'
+    >>> s = s.replace('tigre', 'gato')
+    >>> s
+    'um gato, dois gatos, três gatos'
+
+Dividir e unir
+---------------------
+
+::
+
+    >>> txt = 'batatinha quando nasce'
+    >>> txt.split('/')
+    ['21', '02', '2011']
+    >>> ip = '192.188.10.144'
+    >>> ip.split('.')
+    ['198', '188', '10', '144']
+    >>> times = ['São Paulo', 'Santos', 'Palmeiras']
+    >>> '/'.join(times)
+    'São Paulo/Santos/Palmeiras'
+
+
+Nasceu.py
+----------------
+
+* Faça um programa que solicite a data de nascimento (dd/mm/aaaa) e
+  imprima com o nome do mês por extenso
+
+* Modules have a simple structure
+* Model definition intuitive and efficient
+    * uses Python standards (decorators, descriptors)
+    * recordsets provide support for "batch" processing
+    * many model hooks (default values, constraints, computed fields)
