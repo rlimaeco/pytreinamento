@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>Python &mdash; Treinamento</title>
+    <title>Treinamento de Python</title>
 
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Treinamento Python" href="#" />
+    <link rel="top" title="Treinamento de Python" href="#" />
   </head>
   <body>
     <div class="related">
@@ -32,7 +32,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="#">Treinamento Python</a> &raquo;</li>
+        <li><a href="#">Treinamento de Python</li> 
       </ul>
     </div>
 
@@ -43,7 +43,7 @@
 
   <div class="section" id="python">
 <h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
-<p>Desenvolvimento (Rafael Lima)
+<p>Development (Rafael Lima)
 <a class="reference external" href="mailto:rafael&#46;lima&#37;&#52;&#48;kmee&#46;com&#46;br">rafael<span>&#46;</span>lima<span>&#64;</span>kmee<span>&#46;</span>com<span>&#46;</span>br</a></p>
 <div class="section" id="sumario">
 <h2>Sumário<a class="headerlink" href="#sumario" title="Permalink to this headline">¶</a></h2>
@@ -218,7 +218,7 @@ if v &gt; 110:
 <ul class="simple">
 <li>Considere a empresa de telefonia Tchau.
 Abaixo de 200 minutos, a empresa cobra R$0,20 por minuto.
-Entre 20 e 400 minutos, o preço é R$0,18. Acima de 400 minutos
+Entre 200 e 400 minutos, o preço é R$0,18. Acima de 400 minutos
 o preço por minuto é R$0,15. Calcule sua conta de telefone.</li>
 </ul>
 <div class="admonition note">
@@ -405,14 +405,6 @@ e diga quantas consoantes foram lidas.</p>
 <span class="k">print</span> <span class="s">&quot;Nova palavra </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span><span class="n">troca</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li>Extend existing models</li>
-<li>Many view types</li>
-<li>Workflows</li>
-<li>Reports</li>
-<li>Security</li>
-<li>Translations</li>
-</ul>
 </div>
 <div class="section" id="pesquisar-e-substituir">
 <h2>Pesquisar e Substituir<a class="headerlink" href="#pesquisar-e-substituir" title="Permalink to this headline">¶</a></h2>
@@ -449,23 +441,81 @@ e diga quantas consoantes foram lidas.</p>
 </div>
 <div class="section" id="nasceu-py">
 <h2>Nasceu.py<a class="headerlink" href="#nasceu-py" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p class="first">Faça um programa que solicite a data de nascimento (dd/mm/aaaa) e
-imprima com o nome do mês por extenso</p>
-</li>
-<li><p class="first">Modules have a simple structure</p>
-</li>
-<li><dl class="first docutils">
-<dt>Model definition intuitive and efficient</dt>
-<dd><ul class="first last simple">
-<li>uses Python standards (decorators, descriptors)</li>
-<li>recordsets provide support for &#8220;batch&#8221; processing</li>
-<li>many model hooks (default values, constraints, computed fields)</li>
+<ul class="simple">
+<li>Faça um programa que solicite a data de nascimento (dd/mm/aaaa) e
+imprima com o nome do mês por extenso</li>
 </ul>
-</dd>
-</dl>
-</li>
+</div>
+</div>
+<div class="section" id="exercicios">
+<h1>Exercícios<a class="headerlink" href="#exercicios" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pyloja">
+<h2>pyLoja<a class="headerlink" href="#pyloja" title="Permalink to this headline">¶</a></h2>
+<p>Implementar uma sistema de controle de loja. Este sistema será gerenciado
+com um script python via terminal,  com as seguintes funcionalidades:</p>
+<ul class="simple">
+<li>Adicionar produtos e armazená-los em uma planilha</li>
+<li>Obter informações dos produtos armazenados</li>
 </ul>
+<p>Enviar parâmetros via console python:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ python main.py -add
+
+ou
+
+$ python main.py -readcsv
+</pre></div>
+</div>
+<p>Um exemplo de script que recebe argumentos:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">argumentos</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+<span class="k">for</span> <span class="n">argumento</span> <span class="ow">in</span> <span class="n">argumentos</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">argumento</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="zoo">
+<h2>Zoo<a class="headerlink" href="#zoo" title="Permalink to this headline">¶</a></h2>
+<p>Criar um modelo de Zoológico, onde você poderá criar animais
+com suas características. O diagrama de classes base está disponível
+em <a class="reference external" href="http://tinyurl.com/mamifero">http://tinyurl.com/mamifero</a></p>
+<a class="reference internal image-reference" href="_static/uml.jpg"><img alt="_static/uml.jpg" src="_static/uml.jpg" /></a>
+<p>Exemplo de classe mamífero:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># coding: utf-8</span>
+<span class="c"># mamifero.py</span>
+
+<span class="k">class</span> <span class="nc">Mamifero</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">som</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span> <span class="s">&#39;emitir um som&#39;</span>
+
+<span class="k">class</span> <span class="nc">Homem</span><span class="p">(</span><span class="n">Mamifero</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">som</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span> <span class="s">&#39;Oi!&#39;</span>
+
+<span class="k">class</span> <span class="nc">Cachorro</span><span class="p">(</span><span class="n">Mamifero</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">som</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span> <span class="s">&#39;Wufff! Wufff!&#39;</span>
+
+<span class="k">class</span> <span class="nc">Gato</span><span class="p">(</span><span class="n">Mamifero</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">som</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span> <span class="s">&#39;Meawwwww!&#39;</span>
+</pre></div>
+</div>
+<p>Continuação:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">mamifero</span> <span class="o">=</span> <span class="n">Mamifero</span><span class="p">()</span>
+<span class="n">mamifero</span><span class="o">.</span><span class="n">som</span><span class="p">()</span>
+
+<span class="n">animais</span> <span class="o">=</span> <span class="p">[</span><span class="n">Homem</span><span class="p">(),</span> <span class="n">Cachorro</span><span class="p">(),</span> <span class="n">Gato</span><span class="p">()]</span>
+
+<span class="k">for</span> <span class="n">animal</span> <span class="ow">in</span> <span class="n">animais</span><span class="p">:</span>
+    <span class="n">animal</span><span class="o">.</span><span class="n">som</span><span class="p">()</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -516,6 +566,11 @@ imprima com o nome do mês por extenso</p>
 <li><a class="reference internal" href="#pesquisar-e-substituir">Pesquisar e Substituir</a></li>
 <li><a class="reference internal" href="#dividir-e-unir">Dividir e unir</a></li>
 <li><a class="reference internal" href="#nasceu-py">Nasceu.py</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exercicios">Exercícios</a><ul>
+<li><a class="reference internal" href="#pyloja">pyLoja</a></li>
+<li><a class="reference internal" href="#zoo">Zoo</a></li>
 </ul>
 </li>
 </ul>

@@ -101,7 +101,7 @@ Demais
 
 
 Popularidade Github e StackOverflow
------------------------------
+-------------------------------------------
 
 .. figure:: /_static/pop.png
    :class: center
@@ -188,7 +188,7 @@ Tchau.py
 
 * Considere a empresa de telefonia Tchau.
   Abaixo de 200 minutos, a empresa cobra R$0,20 por minuto.
-  Entre 20 e 400 minutos, o preço é R$0,18. Acima de 400 minutos
+  Entre 200 e 400 minutos, o preço é R$0,18. Acima de 400 minutos
   o preço por minuto é R$0,15. Calcule sua conta de telefone.
 
 .. note::
@@ -318,7 +318,7 @@ Insere 5 números e depois exibe-os::
 
 
 Consoantes.py
-----------
+------------------------
 
 Faça um Programa que leia um vetor de 10 caracteres minúsculos,
 e diga quantas consoantes foram lidas.
@@ -369,7 +369,7 @@ Fatia do primeiro índice até o anterior do segundo::
     8
 
 Incremento no fatiamento
---------------------
+------------------------------
 
 ::
 
@@ -394,7 +394,7 @@ Verifique se uma palavra é palíndrome::
 
 
 Concatenção
-----------
+--------------------
 
 * Faça um programa que leia uma palavra e troque as vogais por "*"
 
@@ -413,16 +413,11 @@ Concatenção
         k += 1
     print "Nova palavra %s" %troca
 
-* Extend existing models
-* Many view types
-* Workflows
-* Reports
-* Security
-* Translations
+
 
 
 Pesquisar e Substituir
------------------------
+-------------------------------
 
 ::
 
@@ -463,8 +458,94 @@ Nasceu.py
 * Faça um programa que solicite a data de nascimento (dd/mm/aaaa) e
   imprima com o nome do mês por extenso
 
-* Modules have a simple structure
-* Model definition intuitive and efficient
-    * uses Python standards (decorators, descriptors)
-    * recordsets provide support for "batch" processing
-    * many model hooks (default values, constraints, computed fields)
+
+Exercícios
+=================
+
+pyLoja
+----------------------
+
+Implementar uma sistema de controle de loja. Este sistema será gerenciado
+com um script python via terminal,  com as seguintes funcionalidades:
+
++ Adicionar produtos e armazená-los em uma planilha
++ Obter informações dos produtos armazenados
+
+
+.. nextslide::
+
+Enviar parâmetros via console python::
+
+   $ python main.py -add
+
+   ou
+
+   $ python main.py -readcsv
+
+
+.. nextslide::
+
+Um exemplo de script que recebe argumentos::
+
+   import sys
+
+   argumentos = sys.argv[1:]
+
+   for argumento in argumentos:
+       print argumento
+
+
+Zoo
+----------------------------
+
+Criar um modelo de Zoológico, onde você poderá criar animais
+com suas características. O diagrama de classes base está disponível
+em http://tinyurl.com/mamifero
+
+.. nextslide::
+
+
+.. image:: /_static/uml.jpg
+   :scale: 50%
+
+
+.. nextslide::
+
+Exemplo de classe mamífero::
+
+    # coding: utf-8
+    # mamifero.py
+
+    class Mamifero:
+
+        def som(self):
+            print 'emitir um som'
+
+    class Homem(Mamifero):
+
+        def som(self):
+            print 'Oi!'
+
+    class Cachorro(Mamifero):
+
+        def som(self):
+            print 'Wufff! Wufff!'
+
+    class Gato(Mamifero):
+
+        def som(self):
+            print 'Meawwwww!'
+
+
+
+.. nextslide::
+
+Continuação::
+
+   mamifero = Mamifero()
+   mamifero.som()
+
+   animais = [Homem(), Cachorro(), Gato()]
+
+   for animal in animais:
+       animal.som()
